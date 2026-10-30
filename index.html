@@ -1,1 +1,109 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Qazi Cola — a bold, refreshing cola experience.">
+  <title>Qazi Cola | Refresh Your Moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--red:#d71920;--deep:#790b12;--gold:#f7c84b;--ink:#171313;--cream:#fff8ee}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream)}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1140px,90%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:#fffdf8ed;backdrop-filter:blur(12px);border-bottom:1px solid #eadfd3}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-family:Outfit,sans-serif;font-weight:900;font-size:25px;letter-spacing:-1px}
+    .brand-mark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:white;font-size:20px;box-shadow:0 5px 15px #d7192040}
+    .navlinks{display:flex;align-items:center;gap:30px;font-size:14px;font-weight:700}.navlinks a:hover{color:var(--red)}
+    .pill{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:999px;background:var(--red);color:white;font-weight:800;box-shadow:0 8px 20px #d7192030;transition:.2s}
+    .pill:hover{background:var(--deep);transform:translateY(-2px)}
+    .menu{display:none;border:0;background:none;font-size:27px}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 75% 35%,#ef4b3f 0,#b40f19 35%,#650910 100%);color:white;min-height:620px;display:flex;align-items:center}
+    .hero:before{content:"";position:absolute;width:600px;height:600px;border:1px solid #ffffff25;border-radius:50%;right:-90px;top:10px;box-shadow:0 0 0 55px #ffffff09,0 0 0 110px #ffffff07}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:35px;padding:80px 0}
+    .eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:800;color:var(--gold)}
+    h1,h2,h3{font-family:Outfit,sans-serif;margin:0;line-height:1.02}h1{font-size:clamp(54px,7vw,90px);letter-spacing:-3px;margin:18px 0}
+    .hero p{font-size:18px;line-height:1.7;color:#ffe6df;max-width:490px;margin:0 0 30px}.hero .pill{background:var(--gold);color:#391012;box-shadow:none}
+    .hero-art{height:430px;display:grid;place-items:center;position:relative}
+    .glow{position:absolute;width:340px;height:340px;border-radius:50%;background:#ffcf6b55;filter:blur(35px)}
+    .can{position:relative;width:190px;height:360px;border-radius:35px 35px 28px 28px;background:linear-gradient(90deg,#8d0b12,#ed252b 22%,#c30f1b 70%,#750912);box-shadow:25px 30px 50px #26030880,inset 9px 0 13px #ffffff30,inset -8px 0 12px #00000030;transform:rotate(8deg)}
+    .can:before,.can:after{content:"";position:absolute;left:0;width:100%;height:18px;background:linear-gradient(#ddd,#777,#eee);border-radius:50%}
+    .can:before{top:-7px}.can:after{bottom:-7px}
+    .can-top{position:absolute;top:-4px;left:35%;width:30%;height:8px;border-radius:50%;background:#777}
+    .can-label{position:absolute;inset:75px 12px auto;text-align:center;color:white}
+    .can-label small{display:block;font-size:11px;letter-spacing:4px;font-weight:800;color:var(--gold)}
+    .can-label strong{display:block;font-family:Outfit,sans-serif;font-size:35px;line-height:.9;margin:10px 0;text-shadow:2px 3px #700810}
+    .can-label span{font-size:10px;letter-spacing:3px;font-weight:800}
+    .spark{position:absolute;color:var(--gold);font-size:35px}.s1{top:55px;right:65px}.s2{bottom:70px;left:65px;font-size:24px}
+    .stats{background:#fff;box-shadow:0 10px 35px #37100b0c;position:relative;margin-top:-35px;border-radius:18px;padding:25px 35px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+    .stats strong{font-family:Outfit,sans-serif;font-size:22px;color:var(--red);display:block}.stats span{font-size:13px;color:#766d68}
+    section{padding:100px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 48px}.section-head .eyebrow{color:var(--red)}h2{font-size:clamp(36px,5vw,54px);margin:13px 0}.section-head p{color:#706763;line-height:1.7}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-visual{min-height:390px;border-radius:28px;background:linear-gradient(140deg,#f8d66d,#f3a13e 55%,#d71920);display:grid;place-items:center;position:relative;overflow:hidden}
+    .about-visual:before{content:"Q";font-family:Outfit;font-weight:900;font-size:340px;color:#ffffff30;position:absolute;line-height:1}
+    .badge-round{z-index:1;width:190px;height:190px;border:2px dashed white;border-radius:50%;display:grid;place-items:center;text-align:center;color:white;font-family:Outfit;font-weight:900;font-size:27px;transform:rotate(-12deg)}
+    .about-copy h2{margin-bottom:22px}.about-copy p{color:#706763;line-height:1.8}.ticks{padding:0;list-style:none;margin:25px 0}.ticks li{margin:13px 0;font-weight:700}.ticks li:before{content:"✓";display:inline-grid;place-items:center;background:#ffe4df;color:var(--red);width:25px;height:25px;border-radius:50%;margin-right:12px}
+    .features{background:#fff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.feature{padding:32px;border:1px solid #f0e4d9;border-radius:20px;background:#fffaf4}.feature-icon{width:54px;height:54px;border-radius:16px;background:#ffe6df;display:grid;place-items:center;font-size:25px;margin-bottom:22px}.feature h3{font-size:23px;margin-bottom:12px}.feature p{color:#766d68;line-height:1.7;font-size:14px}
+    .cta{padding:75px 0;background:linear-gradient(110deg,#790b12,#d71920);color:white;text-align:center}.cta h2{max-width:700px;margin:0 auto 18px}.cta p{color:#ffe0db;margin:0 auto 27px;max-width:560px;line-height:1.7}.cta .pill{background:var(--gold);color:#391012}
+    footer{background:#190d0e;color:#f9e9e3;padding:45px 0 25px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:25px}.footer-note{color:#b9a5a0;font-size:13px;margin-top:30px;border-top:1px solid #ffffff20;padding-top:20px}
+    @media(max-width:760px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#fffdf8;padding:22px 5%;flex-direction:column;align-items:flex-start;border-bottom:1px solid #eadfd3}.navlinks.open{display:flex}.menu{display:block}.nav .pill{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{min-height:auto}.hero-grid{padding:65px 0 75px}.hero-art{height:330px}.can{transform:scale(.82) rotate(8deg)}.stats{grid-template-columns:1fr;margin-top:-22px;padding:23px}.stats div{padding:8px}.stats div+div{border-top:1px solid #eee4dc;padding-top:17px}.cards{grid-template-columns:1fr}section{padding:72px 0}.about-visual{min-height:290px}.footer-row{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="brand-mark">Q</span> QAZI COLA</a>
+    <nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#features">Our Promise</a><a href="#contact">Contact</a></nav>
+    <a class="pill" href="#contact">Get in touch</a>
+    <button class="menu" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">A fresh moment starts here</div>
+        <h1>Refresh your<br>moment.</h1>
+        <p>Meet Qazi Cola — a bold cola experience made for sharing good moments with friends and family.</p>
+        <a class="pill" href="#about">Discover Qazi Cola <span aria-hidden="true">&nbsp; →</span></a>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a Qazi Cola can">
+        <div class="glow"></div><span class="spark s1">✦</span><span class="spark s2">✧</span>
+        <div class="can"><div class="can-top"></div><div class="can-label"><small>ORIGINAL</small><strong>QAZI<br>COLA</strong><span>REFRESH YOUR DAY</span></div></div>
+      </div>
+    </div>
+  </section>
+  <div class="wrap stats">
+    <div><strong>Made for moments</strong><span>Share a refreshing pause</span></div>
+    <div><strong>Bold brand spirit</strong><span>Big energy, bright moments</span></div>
+    <div><strong>Qazi Cola</strong><span>Your moment. Your refreshment.</span></div>
+  </div>
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-visual"><div class="badge-round">QAZI<br>COLA<br>REFRESH</div></div>
+      <div class="about-copy">
+        <div class="eyebrow">The Qazi Cola story</div>
+        <h2>Bring people<br>together.</h2>
+        <p>Every great moment deserves a refreshing companion. Qazi Cola is a brand built around togetherness, celebration and the simple joy of sharing a drink.</p>
+        <ul class="ticks"><li>A bold, memorable identity</li><li>Made for everyday celebrations</li><li>Best enjoyed chilled with friends</li></ul>
+      </div>
+    </div>
+  </section>
+  <section class="features" id="features">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Why Qazi Cola</div><h2>Make every moment count.</h2><p>From a quick break to a big celebration, bring Qazi Cola to the moments worth sharing.</p></div>
+      <div class="cards">
+        <article class="feature"><div class="feature-icon">❄️</div><h3>Serve it chilled</h3><p>Cool down and make your refreshment moment feel extra special.</p></article>
+        <article class="feature"><div class="feature-icon">🤝</div><h3>Share the moment</h3><p>Good times are even better when friends and family are together.</p></article>
+        <article class="feature"><div class="feature-icon">✨</div><h3>Bold brand spirit</h3><p>A confident look and a lively personality for every occasion.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="cta" id="contact">
+    <div class="wrap"><h2>Ready to refresh your moment?</h2><p>For product information, distribution enquiries or business opportunities, get in touch with the Qazi Cola team.</p><a class="pill" href="mailto:info@qazicola.com">Contact Qazi Cola</a></div>
+  </section>
+</main>
+<footer><div class="wrap"><div class="footer-row"><a class="brand" href="#home"><span class="brand-mark">Q</span> QAZI COLA</a><div>Refresh your moment.</div></div><div class="footer-note">© <span id="year"></span> Qazi Cola. All rights reserved. <span style="float:right">Website draft — replace sample details before publishing.</span></div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
